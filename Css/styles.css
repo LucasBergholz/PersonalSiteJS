@@ -1,0 +1,109 @@
+@import url('/images/wave.svg');
+
+/*Starting with the navbar;*/
+
+.navBar {
+    height: 74px;
+    background: linear-gradient(90deg, #9500CA 1.39%, #CB38FF 50%, #9500CA 100%);
+    color: #232323;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*Styling the content inside the navbar*/
+
+.leftBox{
+    display: flex;
+    font-size: 20px;
+}
+
+.titleOne{
+    font-weight: 500;
+}
+
+.titleTwo{
+    font-weight: 700;
+}
+
+.rightBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rightBox button{
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rightBox button:hover{
+    color: #fff;
+    transition:ease-out;
+    transition-duration: 0.3s;
+}
+
+svg:hover path{
+    fill: #fff;
+    transition:ease-out;
+    transition-duration: 0.3s;
+}
+
+/*Styling the first div*/
+
+.partOne{
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 800px;
+    max-width: 1000px;
+}
+
+.contentTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.rocketGif{
+    height: 260px;
+}
+
+.picture{
+    height: 220px;
+    margin-right: 50px;
+}
+
+.aboutMe{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.textOne{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+}
+
+/*Styling the second part*/
+
+.partTwo{
+    height: 800px;
+    background-image: url(/images/wave.svg);
+    background-position: 0%;
+    background-size: initial;
+}
