@@ -81,6 +81,23 @@
     height: 260px;
 }
 
+.rocketGif:hover{
+    animation-duration: 3s;
+    animation-name: changeposition2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changeposition2 {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: -500px;
+    }
+}
+
 .picture{
     height: 220px;
     margin-right: 50px;
@@ -128,15 +145,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.partTwo{
+    animation-duration: 6s;
+    animation-name: changeposition;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes changeposition {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
 }
 
 #One{
     color: #232323;
-    margin-top: 150px;
 }
 
 .textTwo{
-    margin-top: 100px;
+    margin-top: 80px;
     color: #232323;
     font-weight: 500;
     font-size: 20px;
@@ -144,8 +182,50 @@
     max-width: 900px;
 }
 
-.studygif{
-    position: absolute;
-    top: 500px;
-    left: 1000px;
+
+/*Styling the third part of the project*/
+
+.partThree{
+    position: relative;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Two{
+    margin-top: 50px;
+}
+
+.textThree{
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    min-width: 700px;
+    max-width: 900px;
+}
+
+/*Styling the fourth part of the project*/
+
+.partFour{
+    position: relative;
+    height: 800px;
+    background-image: url(/images/wave.svg);
+    background-position: 0%;
+    background-size: initial;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partFour{
+    animation-duration: 6s;
+    animation-name: changeposition;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
