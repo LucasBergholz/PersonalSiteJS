@@ -47,7 +47,7 @@
     transition-duration: 0.3s;
 }
 
-svg:hover path{
+#sun:hover path{
     fill: #fff;
     transition:ease-out;
     transition-duration: 0.3s;
@@ -89,21 +89,63 @@ svg:hover path{
 .aboutMe{
     font-weight: 600;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .textOne{
-    height: 200px;
+    height: 220px;
     display: flex;
     flex-direction: column;
-    justify-content: first baseline;
+    justify-content: space-around;
+}
+
+.list svg path{
+    fill:#fff;
+}
+
+.list svg:hover path{
+    fill: #CB38FF;
+    transition:ease-out;
+    transition-duration: 0.3s;
+}
+
+.list{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*Styling the second part*/
 
 .partTwo{
+    position: relative;
     height: 800px;
     background-image: url(/images/wave.svg);
     background-position: 0%;
     background-size: initial;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#One{
+    color: #232323;
+    margin-top: 150px;
+}
+
+.textTwo{
+    margin-top: 100px;
+    color: #232323;
+    font-weight: 500;
+    font-size: 20px;
+    min-width: 700px;
+    max-width: 900px;
+}
+
+.studygif{
+    position: absolute;
+    top: 500px;
+    left: 1000px;
 }
