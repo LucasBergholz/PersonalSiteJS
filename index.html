@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Css/index.css">
+    <script src="/index.js"></script>
     <title>Lucas Bergholz</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
                     <path fill="#000000" d="M15.0007 9.375C11.901 9.375 9.37545 11.9004 9.37545 15C9.37545 18.0996 11.901 20.625 15.0007 20.625C18.1005 20.625 20.626 18.0996 20.626 15C20.626 11.9004 18.1005 9.375 15.0007 9.375ZM29.4389 14.0918L23.8898 11.3203L25.8528 5.4375C26.1165 4.64062 25.3606 3.88477 24.5695 4.1543L18.6865 6.11719L15.909 0.5625C15.534 -0.1875 14.4675 -0.1875 14.0925 0.5625L11.3209 6.11133L5.4319 4.14844C4.63499 3.88477 3.87909 4.64062 4.14864 5.43164L6.11162 11.3145L0.562527 14.0918C-0.187509 14.4668 -0.187509 15.5332 0.562527 15.9082L6.11162 18.6797L4.14864 24.5684C3.88495 25.3652 4.64085 26.1211 5.4319 25.8516L11.315 23.8887L14.0866 29.4375C14.4616 30.1875 15.5281 30.1875 15.9031 29.4375L18.6747 23.8887L24.5578 25.8516C25.3547 26.1152 26.1106 25.3594 25.8411 24.5684L23.8781 18.6855L29.4272 15.9141C30.189 15.5332 30.189 14.4668 29.4389 14.0918V14.0918ZM20.3037 20.3027C17.3797 23.2266 12.6217 23.2266 9.69774 20.3027C6.77377 17.3789 6.77377 12.6211 9.69774 9.69727C12.6217 6.77344 17.3797 6.77344 20.3037 9.69727C23.2277 12.6211 23.2277 17.3789 20.3037 20.3027Z" fill="black"/>
                 </svg>
             </button>
-            <button class="college">College</button>
-            <button class="studies">Studies</button>
-            <button class="curriculum">Curriculum</button>
+            <button class="college" onclick="scrollIntoDiv('partTwo')">College</button>
+            <button class="studies" onclick="scrollIntoDiv('partThree')">Studies</button>
+            <button class="curriculum" onclick="scrollIntoDiv('partFour')">Curriculum</button>
         </div>
     </nav>
     <div class="partOne">
@@ -62,7 +63,7 @@
             </div>
         </div>
     </div>
-    <div class="partTwo">
+    <div class="partTwo" id="partTwo">
         <p class="title" id="One">College</p>
         <p class="textTwo">I'm currently studying Software Engineering in University of Brasília, in the third semester of the course. 
             By now, i have had contact with two languages in classes, which are "C" and "Java". To conclude the class that studied "C",
@@ -70,7 +71,7 @@
             check my GitHub). I'm yet to conclude the Java project and class.
         </p>
     </div>
-    <div class="partThree">
+    <div class="partThree" id="partThree">
         <p class="title" id="Two">Studies</p>
         <p class="textThree">Outside of the college sphere, i focus my studies into Web Development.
             On that note, i currently have a good sample of HTML and CSS projects, while i try to step up the pace
@@ -78,6 +79,24 @@
             of future frameworks that i would be interested in. In a near future, i aim to study React.
         </p>
     </div>
-    <div class="partFour"></div>
+    <div class="partFour" id="partFour">
+        <p class="title" id="Three">Curriculum</p>
+        <p class="textFour"> I am yet to have any experiences in the programming work area. As i'm still fairly new to this world, i think i need to study more until i'm fully prepared
+            to work with Software Engineering. With that being said, i've had work experiences in the marketing and comunication area, having managed a few instagram and facebook pages of relative
+            success, where i edited several images and managed the accounts all around, doing also data analisys of their public with the intent of selling courses and products.
+        </p>
+        <ul class="list2">
+            <li>Medium to advanced English.</li>
+            <li>Interned for Espaço Virtual on Data Analisys and Social Media.</li>
+            <li>Social Media Accounts:
+                <a href="https://www.facebook.com/meditacaoharmoniaequilibrio/?hc_ref=ARRQUHpwef_ztP_631KPgjSpOhOPnRDhUqeJdBFS-05gLve2glB82L3PeFOvrxqMqA0&fref=nf&__xts__[0]=68.ARB1frdDnElDyMG10vGitWW-pVYrDHlCi1RQiBWbvt1HHQexr4ergjNBQ49apflfDa2kzvwe30KZ3oAihnGV9ITnAZEu_Z0IDUh4BVD_bU0qGzHW6eDYV0pszpBexoMLuavN91PmOhlZAP-lA-9gQUJ-IBlatQQIvluGkHvFjRWADSGIjfn7KUqXIx0-TztY-QrhKCblgMjGfOnBkRb2iekcaeufET86cEkixN76p6uTd5awWCJ1RWwBOlSSMICHOTKj8WQh8towkiNdyVrOTTWuwXA-lP6YixjejLLvJNRJC3mVCZmAqw">MHE</a>,
+                <a href="https://pt-br.facebook.com/negocioseaweb/">NEW</a>,
+                <a href="https://www.instagram.com/pombo_sem_asas/">PSA</a>, and much more.
+            </li>
+            <li>Experienced in "C", "HTML", "CSS" and working on "JS".</li>
+        </ul>
+    </div>
+
+    <div class="bottomBar"></div>
 </body>
 </html>
