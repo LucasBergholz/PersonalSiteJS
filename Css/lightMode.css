@@ -1,11 +1,37 @@
 @import url('/images/wave.svg');
+@import url('/Css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*Starting with the navbar;*/
+
+body{
+    background-color: rgb(226, 226, 226);
+    font-family: 'montserrat';
+    color: #232323;
+    min-width: max-content;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-family: 'montserrat';
+}
+
+.title{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+a{
+    text-decoration: underline;
+    color: currentColor;
+}
 
 .navBar {
     height: 74px;
     background: linear-gradient(90deg, #9500CA 1.39%, #CB38FF 50%, #9500CA 100%);
-    color: #232323;
+    color: #fff;
 
     display: flex;
     justify-content: space-between;
@@ -36,19 +62,24 @@
 }
 
 .rightBox button{
+    color: #fff;
     margin-left: 30px;
     font-weight: 700;
     font-size: 20px;
 }
 
 .rightBox button:hover{
-    color: #fff;
+    color: #232323;
     transition:ease-out;
     transition-duration: 0.3s;
 }
 
-#sun:hover path{
+#sun path{
     fill: #fff;
+}
+
+#sun:hover path{
+    fill: #232323;
     transition:ease-out;
     transition-duration: 0.3s;
 }
@@ -117,7 +148,7 @@
 }
 
 .list svg path{
-    fill:#fff;
+    fill:#232323;
 }
 
 .list svg:hover path{
@@ -170,12 +201,12 @@
 }
 
 #One{
-    color: #232323;
+    color: #fff;
 }
 
 .textTwo{
     margin-top: 80px;
-    color: #232323;
+    color: #fff;
     font-weight: 500;
     font-size: 20px;
     min-width: 700px;
@@ -231,11 +262,11 @@
 }
 
 #Three{
-    color: #232323;
+    color: #fff;
 }
 
 .textFour{
-    color: #232323;
+    color: #fff;
     margin-top: 100px;
     font-weight: 500;
     font-size: 20px;
@@ -246,7 +277,7 @@
 .list2{
     margin-top: 25px;
 
-    color: #232323;
+    color: #fff;
     list-style-type: disc;
     font-weight: 500;
     font-size: 20px;
